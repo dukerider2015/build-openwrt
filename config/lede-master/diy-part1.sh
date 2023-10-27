@@ -8,6 +8,12 @@
 
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git alist https://github.com/sbwml/luci-app-alist' feeds.conf.default
+sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' feeds.conf.default
+sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git argonnew https://github.com/jerrykuku/luci-theme-argon.git' feeds.conf.default
+
 
 # other
 # rm -rf package/lean/{samba4,luci-app-samba4,luci-app-ttyd}
